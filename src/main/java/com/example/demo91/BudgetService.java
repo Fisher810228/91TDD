@@ -14,7 +14,7 @@ public class BudgetService {
 
   BudgetRepo budgetRepo;
 
-  double query(LocalDate start, LocalDate end) {
+  public double query(LocalDate start, LocalDate end) {
     int amount = 0;
     if (end.isBefore(start)) {
       return 0;
